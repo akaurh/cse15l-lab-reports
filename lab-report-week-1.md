@@ -1,5 +1,5 @@
 _Week 1 – Remote Access and the Filesystem_
-***
+---
 
 This week for lab we learned how to prep our personal computers for remote access to the CSE lab computers.
 
