@@ -1,1 +1,1 @@
-![Image](lab_ss.png)
+![Image](lab-images/lab_ss.png)
