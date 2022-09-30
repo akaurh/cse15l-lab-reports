@@ -34,7 +34,12 @@ And here's me trying a couple more commands on the remote computer once U had go
 
 ![Image](lab-images/lab1_5.png)
 
-
 #MOVING FILES WITH SCP
+After creating a simple java file to let us know our OS name, user name, user home, and user directory, we ran it on both our local computer and the remote computer.
+
+You can see below the switch between the two operating system and users settings.
+
+![Image](lab-images/lab1_6.png)
+
 #SETTING AN SSH KEY
 #OPTIMIZING REMOTE RUNNING
