@@ -2,13 +2,13 @@ _Week 1 – Remote Access and the Filesystem_
 
 This week for lab we learned how to prep our personal computers for remote access to the CSE lab computers.
 
-INSTALLING VS CODE
+**INSTALLING VS CODE**
 
 After obtaining our course specific password from [here](https://sdacs.ucsd.edu/~icc/index.php), and installing VS code to access a terminal, we're ready to go.
 
 ![Image](lab-images/lab1_1.png)
 
-REMOTELY CONNECTING
+**REMOTELY CONNECTING**
 
 To remotely connect we had to first  open up terminal on VSCode and then type in
 
@@ -33,7 +33,7 @@ And here's me trying a couple more commands on the remote computer once U had go
 
 ![Image](lab-images/lab1_5.png)
 
-MOVING FILES WITH SCP
+**MOVING FILES WITH SCP**
 
 After creating a simple java file to let us know our OS name, user name, user home, and user directory, we ran it on both our local computer and the remote computer.
 
@@ -41,7 +41,7 @@ You can see below the switch between the two operating system and users settings
 
 ![Image](lab-images/lab1_6.png)
 
-SETTING AN SSH KEY
+**SETTING AN SSH KEY**
 
 Setting up an ssh key essentially just let us choose a keyword to log in remotely rather than type our whole password in everytime.
 
@@ -53,7 +53,7 @@ Also note, it is case sensitive !
 
 ![Image](lab-images/lab1_7.png)
 
-OPTIMIZING REMOTE RUNNING
+**OPTIMIZING REMOTE RUNNING**
 
 As for trying to copy my file over in less than 10 keystrokes, I was unsucessful, I'm curious to see how people get this done in less than 10 keystrokes.
 
