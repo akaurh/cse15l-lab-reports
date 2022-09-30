@@ -30,7 +30,7 @@ Here's what _ls -lat_ gave me on my computer
 
 It seems to me that it listed information about all the files and program files I had downloaded on my computer
 
-And here's me trying a couple more commands on the remote computer once U had gotten logged in
+And here's me trying a couple more commands on the remote computer once I had gotten logged in
 
 ![Image](lab-images/lab1_5.png)
 
