@@ -35,6 +35,7 @@ And here's me trying a couple more commands on the remote computer once U had go
 ![Image](lab-images/lab1_5.png)
 
 <h4>MOVING FILES WITH SCP<h4>
+
 After creating a simple java file to let us know our OS name, user name, user home, and user directory, we ran it on both our local computer and the remote computer.
 
 You can see below the switch between the two operating system and users settings.
@@ -42,12 +43,21 @@ You can see below the switch between the two operating system and users settings
 ![Image](lab-images/lab1_6.png)
 
 <h4>SETTING AN SSH KEY<h4>
+
 Setting up an ssh key essentially just let us choose a keyword to log in remotely rather than type our whole password in everytime.
 
 I thought this was super cool because it was getting tiresome going back and forth between log on and off the remote computer.
 
 Here's a closer look at what you can expect after setting up a passphrase to let you quicker.
 
+Also note, it is case sensitive !
+
 ![Image](lab-images/lab1_7.png)
 
 <h4>OPTIMIZING REMOTE RUNNING<h4>
+
+As for trying to copy my file over in less than 10 keystrokes, I was unsucessful, I'm curious to see how people get this done in less than 10 keystrokes.
+
+However I ended up waiting at least 10 minutes to give it time to copy files over, and when I went to run it again on my remote computer, it still displayed the old files' output. I fear I may be doing something wrong on that account
+
+![Image](lab-images/lab1_8.png)
