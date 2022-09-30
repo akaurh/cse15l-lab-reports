@@ -20,7 +20,7 @@ From there enter your password in and _voila_ we're remotely connected to anothe
 
 ![Image](lab-images/lab1_3.png)
 
-<h4>TRYINGSOMECOMMANDS<h4>
+TRYING SOME COMMANDS
 In lab when my password wouldn't reset, I spent the meantime playing around with some commands on my local computer. 
 
 Here's what _ls -lat_ gave me on my computer
@@ -33,7 +33,7 @@ And here's me trying a couple more commands on the remote computer once U had go
 
 ![Image](lab-images/lab1_5.png)
 
-<h4>MOVING FILES WITH SCP<h4>
+MOVING FILES WITH SCP
 
 After creating a simple java file to let us know our OS name, user name, user home, and user directory, we ran it on both our local computer and the remote computer.
 
@@ -41,7 +41,7 @@ You can see below the switch between the two operating system and users settings
 
 ![Image](lab-images/lab1_6.png)
 
-<h4>SETTING AN SSH KEY<h4>
+SETTING AN SSH KEY
 
 Setting up an ssh key essentially just let us choose a keyword to log in remotely rather than type our whole password in everytime.
 
@@ -53,7 +53,7 @@ Also note, it is case sensitive !
 
 ![Image](lab-images/lab1_7.png)
 
-<h4>OPTIMIZING REMOTE RUNNING<h4>
+OPTIMIZING REMOTE RUNNING
 
 As for trying to copy my file over in less than 10 keystrokes, I was unsucessful, I'm curious to see how people get this done in less than 10 keystrokes.
 
