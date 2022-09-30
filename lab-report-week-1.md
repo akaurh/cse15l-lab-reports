@@ -20,7 +20,8 @@ From there enter your password in and _voila_ we're remotely connected to anothe
 
 ![Image](lab-images/lab1_3.png)
 
-TRYING SOME COMMANDS
+**TRYING SOME COMMANDS**
+
 In lab when my password wouldn't reset, I spent the meantime playing around with some commands on my local computer. 
 
 Here's what _ls -lat_ gave me on my computer
