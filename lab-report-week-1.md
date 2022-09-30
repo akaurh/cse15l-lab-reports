@@ -8,7 +8,7 @@ After obtaining our course specific password from [here](https://sdacs.ucsd.edu/
 
 ![Image](lab-images/lab1_1.png)
 
-<h4>REMOTELY CONNECTING<h4>
+REMOTELY CONNECTING
 
 To remotely connect we had to first  open up terminal on VSCode and then type in
 
