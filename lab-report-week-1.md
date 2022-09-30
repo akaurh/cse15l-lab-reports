@@ -16,7 +16,7 @@ __"ssh cs15lfa22XX@ieng6.ucsd.edu"__
 
 Note: the XX was replaced by our course specific username.
 
-From there enter your password in and _voila_ we're remotely connected to another computer !
+From there, enter your password in, and _voila_ we're remotely connected to another computer !
 
 ![Image](lab-images/lab1_3.png)
 
