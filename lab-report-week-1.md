@@ -57,7 +57,9 @@ class WhereAmI {
   }
 }
 ```
+To compile this file we'll typing in __"javac WhereAmI.java"__ and then __"java WhereAmI"__
 
+Try running this on your operating system and then using __"scp WhereAmI.java cs15lfa22XX@ieng6.ucsd.edu"__ (with XX replaced by your own username)to run this file on your remote computer. Take a look and compare the two. 
 
 You can see below the switch between the two operating system and users settings.
 
@@ -66,6 +68,40 @@ You can see below the switch between the two operating system and users settings
 **SETTING AN SSH KEY**
 
 Setting up an ssh key essentially just let us choose a keyword to log in remotely rather than type our whole password in everytime.
+
+Here's what you should do in your terminal do set this up
+```
+arshkaur@Arshs-Air CSE151_labs % ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/arshkaur/.ssh/id_rsa)
+: /Users/arshkaur/.ssh/id _rsa
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/arshkaur/.ssh/id_rsa
+Your public key has been saved in /Users/arshkaur/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256: PlmoN9FcwId54bZ6saMhdS9Ybe05JhMzulR8037c9ck arshkaur@Arshs
+-Air.lan
+```
+You'll also get some fun randomart as shown below.
+
+Then you want to type these, switching back and forth between the client and server
+```
+# on client
+$ ssh cs15lfa22zz@ieng6.ucsd.edu
+<Enter Password>
+```
+
+```
+# now on server
+$ mkdir .ssh
+$ <logout>
+``` 
+```
+# back on client
+$ scp /Users/arshkaur/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys
+# You use your username and the path you saw in the command above
+```
 
 I thought this was super cool because it was getting tiresome going back and forth between log on and off the remote computer.
 
