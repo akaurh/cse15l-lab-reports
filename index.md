@@ -9,7 +9,7 @@ _[File I created](arsh.html)_
 
 _[Lab Report Week 1](lab-report-week-1.html)_
 
-_[Lab Report Week 3](lab-report-week-1.html)_
+_[Lab Report Week 3](lab-report-week-3.html)_
 
 
 
