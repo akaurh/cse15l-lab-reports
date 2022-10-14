@@ -47,14 +47,16 @@ Let's create a simple java file to let us know our OS name, user name, user home
 
 On our computer, create a file named "WhereAmI.java", the code to produce the results we want is listed below.
 
-`class WhereAmI {
+```
+class WhereAmI {
   public static void main(String[] args) {
     System.out.println(System.getProperty("os.name"));
     System.out.println(System.getProperty("user.name"));
     System.out.println(System.getProperty("user.home"));
     System.out.println(System.getProperty("user.dir"));
   }
-}`
+}
+```
 
 
 You can see below the switch between the two operating system and users settings.
