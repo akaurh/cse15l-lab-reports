@@ -131,6 +131,6 @@ $ javac WhereAmI.java; java WhereAmI
 ```
 this will run both commands at once, no need to keep pressing enter.
 
-![Image](~/Desktop/lab1_10.png)
+![Image](lab-images/lab1_10.png)
 
 
