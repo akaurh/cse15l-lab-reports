@@ -103,7 +103,7 @@ $ scp /Users/arshkaur/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized
 # You use your username and the path you saw in the command above
 ```
 
-I thought this was super cool because it was getting tiresome going back and forth between log on and off the remote computer.
+I thought this was super cool because it was getting tiresome going back and forth between logging on and off the remote computer.
 
 Here's a closer look at what you can expect after setting up a passphrase to let you quicker.
 
@@ -118,3 +118,19 @@ As for trying to copy my file over in less than 10 keystrokes, I was unsucessful
 However I ended up waiting at least 10 minutes to give it time to copy files over, and when I went to run it again on my remote computer, it still displayed the old files' output. I fear I may be doing something wrong on that account
 
 ![Image](lab-images/lab1_8.png)
+
+However, there exists a plethora of shortcuts you can do to optimize remote running. For example we can run commands from the operating system we're currenly on by:
+```
+$ ssh cs15lfa22@ieng6.ucsd.edu "ls -lat"
+```
+This will log onto the remote server and list all files sorted by date and log off, so you don't have to switch back and forth.
+
+Another shortcut allows you to not press enter all the time whenever you finish a command:
+```
+$ javac WhereAmI.java; java WhereAmI
+```
+this will run both commands at once, no need to keep pressing enter.
+
+![Image](lab-images/lab1_10.png)
+
+
