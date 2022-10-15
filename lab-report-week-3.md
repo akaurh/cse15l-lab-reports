@@ -64,7 +64,42 @@ When we call add, we're implementing the first snippet of code, we're using an a
 Here's the search method being used:
 ![Image](lab-images/lab3_3.png)
 
-After spending 2 hours writing and testing, I've been unable to get this to work correctly. 
+After spending 2 hours writing and testing, I've been unable to get this to work correctly.
+
+Here's a rundown of what's going on. We're implementing the same parsing techique by using `regex`. Then we're checking if the array list we're putting all of our inputs contain the input we put into search, if does, we output and return the element that rings up as the same. However everytime I test this, I receieved a "404 Not Found!"
+
+**PART 2**
+This week we looked at bugs and how to look for symptoms and run tests on them.
+
+The first bug I found was in __"ArrayExamples.java"__
+Here's the code that was symptom inducing and producing the error
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+Basically what this was doing is copying the 2nd part of the array onto the 1st part, for example [1,2,3,4,5] turned into ----> [5,4,3,4,5]. Which reversed the first half but left the 2nd half out.
+
+Here's the JUnit failure it provided
+![Image](lab-images/lab3_4.png)
+
+Here's the fixed code that allowed it to pass the JUnit test
+```
+for(int i = 0; i < arr.length/2; i += 1)
+    {
+      int temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - 1 - i] = temp; 
+
+    }
+```
+When we were doing our JUnit test, we were recieving a different input from what we were expecting, that was a symptom for the fact something was wrong and buggy with our code. 
+
+
+
+
 
 
 
