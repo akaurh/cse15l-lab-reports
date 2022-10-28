@@ -145,6 +145,33 @@ for(int i = 0; i < arr.length/2; i += 1)
 **Connection**
 When we were doing our JUnit test, we were recieving a different input from what we were expecting, that was a symptom for the fact something was wrong and buggy with our code. 
 
+**Bug #2: filter()**
+The second bug we will be looking at is in __ListExamples.java__. The method that was buggy is `filter()`.
+
+This method returns a list in the order in which they were added with all of the inputs that StringChecker reurns true. So all of the inputs that return false will not be in the newly created list.
+
+**Testing**
+To test this method we had to create a class that implements StringChecker. This class returns true if the string's length is greater than 2.
+
+Then using this class we were able to write a JUnit test 
+```
+@Test
+    public void testFilter()
+    {
+        List<String> testIn = Arrays.asList("a", "b", "two", "three", "c");
+        List<String> testEx = Arrays.asList("two", "three");
+        assertArrayEquals(testEx.toArray(), ListExamples.filter(testIn, new lengthCheck()).toArray()))
+    }
+```
+**Symptom**
+We expected "two" to be at the 0th index, however the test failed with "three" at 0th index. The order the inputs are being inserted into the list is incorrect. So let's go and investigate that
+
+**Bug**
+We were able
+**Connection**
+
+
+
 
 
 
