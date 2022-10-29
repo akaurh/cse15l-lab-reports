@@ -167,7 +167,32 @@ Then using this class we were able to write a JUnit test
 We expected "two" to be at the 0th index, however the test failed with "three" at 0th index. The order the inputs are being inserted into the list is incorrect. So let's go and investigate that
 
 **Bug**
-We were able
+We were able to find the bug in the code below:
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0, s);
+      }
+    }
+    return result;
+}
+```
+Examining this code, we can see that instead adding the new input to the back of the list regularly, the input is being added to the front of the list like a stack.
+
+So to fix it we altered the code to this below:
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(s);
+      }
+    }
+    return result;
+}
+```
 **Connection**
 
 
