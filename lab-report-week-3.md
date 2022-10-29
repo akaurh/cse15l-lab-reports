@@ -82,7 +82,7 @@ class SearchEngine
 
 ```
 
-Here's the add method being used with the call
+Here's the add method being used with the call:
 ```
 http://localhost:4030/add?s=apple
 ```
@@ -193,7 +193,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
 }
 ```
 **Connection**\
-The bug caused our original mixup because add was being used incorrectly in this case. The way it was written was saying add(index, element), and since the index was set to 0, every time a new element was added, it would be pushed to the front of the list. 
+The bug caused our original mixup because add was being used incorrectly in this case. The way it was written was saying add(index, element), and since the index was set to 0, every time a new element was added, it would be pushed to the front of the list. By getting rid of the 0 and comma, the input is just being added to the preexisting list regularly. 
 
 
 
