@@ -194,7 +194,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
 }
 ```
 **Connection**
-
+The bug caused our original mixup because add was being used incorrectly in this case. The way it was written was saying add(index, element), and since the index was set to 0, every time a new element was added, it would be pushed to the front of the list. 
 
 
 
