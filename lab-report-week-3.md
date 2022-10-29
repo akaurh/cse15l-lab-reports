@@ -3,9 +3,8 @@ _Week 3_
 Over the past 2 weeks we've learned how to create web servers and finding symptoms and solving bugs
 
 <h3>PART 1</h3>
-This is the code I ended up having for the Simple Search Engine, sadly it was able to add fine, but ran into issues when it came down to searching for the element.
+Here's the code snippet for our Simple Search Engine. This allows the use of remote servers to be able to add and search through an Array List that we're using as our "search engine". 
 
-Here's the code snippet for our Simple Search Engine 
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -100,7 +99,7 @@ As you can see we're searching the array list that was displaying when using the
 <h3>PART 2</h3>
 This week we looked at bugs and how to look for symptoms and run tests on them.
 
-**Bug #1: reverseInPlace()**
+**Bug #1: reverseInPlace()**\
 The first bug I found was in __"ArrayExamples.java"__. The method that was producing the error was `reverseInPlace()`.
 
 **Testing**\
