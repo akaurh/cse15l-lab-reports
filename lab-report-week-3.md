@@ -103,7 +103,7 @@ This week we looked at bugs and how to look for symptoms and run tests on them.
 **Bug #1: reverseInPlace()**
 The first bug I found was in __"ArrayExamples.java"__. The method that was producing the error was `reverseInPlace()`.
 
-**Testing**
+**Testing**\
 We tested this method with the JUnit test below
 ```
 @Test
@@ -115,10 +115,10 @@ We tested this method with the JUnit test below
     }
 ```
 
-**Symptom**
+**Symptom**\
 The Junit test revealed that we expected <2>, but we received <3> at element [2] in our array. 
 
-**Bug**
+**Bug**\
 Here's the code that was symptom inducing and producing the error
 ```
 static void reverseInPlace(int[] arr) {
@@ -142,15 +142,15 @@ for(int i = 0; i < arr.length/2; i += 1)
 
     }
 ```
-**Connection**
+**Connection**\
 When we were doing our JUnit test, we were recieving a different input from what we were expecting, that was a symptom for the fact something was wrong and buggy with our code. 
 
-**Bug #2: filter()**
+**Bug #2: filter()**\
 The second bug we will be looking at is in __ListExamples.java__. The method that was buggy is `filter()`.
 
 This method returns a list in the order in which they were added with all of the inputs that StringChecker reurns true. So all of the inputs that return false will not be in the newly created list.
 
-**Testing**
+**Testing**\
 To test this method we had to create a class that implements StringChecker. This class returns true if the string's length is greater than 2.
 
 Then using this class we were able to write a JUnit test 
@@ -163,10 +163,10 @@ Then using this class we were able to write a JUnit test
         assertArrayEquals(testEx.toArray(), ListExamples.filter(testIn, new lengthCheck()).toArray()))
     }
 ```
-**Symptom**
+**Symptom**\
 We expected "two" to be at the 0th index, however the test failed with "three" at 0th index. The order the inputs are being inserted into the list is incorrect. So let's go and investigate that
 
-**Bug**
+**Bug**\
 We were able to find the bug in the code below:
 ```
 static List<String> filter(List<String> list, StringChecker sc) {
@@ -193,7 +193,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
     return result;
 }
 ```
-**Connection**
+**Connection**\
 The bug caused our original mixup because add was being used incorrectly in this case. The way it was written was saying add(index, element), and since the index was set to 0, every time a new element was added, it would be pushed to the front of the list. 
 
 
