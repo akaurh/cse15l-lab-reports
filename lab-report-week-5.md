@@ -101,6 +101,42 @@ Example 1:
 The above command gives us this output (showing a screenshot instead of text block to illustrate the color):
 ![Image](lab-images/week5_1.png)
 
+This allows for the user to clearly see the keyword they're looking for in contrast to all the other text. This is especially helpful if you know exactly what you're looking for, but you have several files to look through.
+
+
+But the fun doesn't stop there, you can also highlight, and change colors while searching for keywords.
+
+Example 2:
+The first line is exporting the enviroment variable, you can see a full menu of options _[here](https://arkit.co.in/practical-grep-command-tricks/)_ 
+
+The first number in the quotations is the attribute, in this case, it's "bright", the second number is the foreground color, the third number is the background color.
+
+Here's the commands in action:
+
+```
+arshkaur@Arshs-Air docsearch % export GREP_COLOR='1;35;45'         
+arshkaur@Arshs-Air docsearch % grep -r --color=auto YES ./technical
+```
+
+The output is illutrated below:
+![Image](lab-images/week5_2.png)
+
+This is just helpful for customization. In addition to the highlight standing out more than just the text color changing.
+
+
+Example 3:
+
+You can also underline the keyword, using 4 from the menu for the first number:
+
+```
+arshkaur@Arshs-Air docsearch % export GREP_COLOR='4;35;45'       
+arshkaur@Arshs-Air docsearch % grep -r --color=auto YES ./technical
+```
+
+And here's the output below:
+![Image](lab-images/week5_3.png)
+
+
 
 
 
