@@ -87,9 +87,82 @@ This will output all the lines within the files containing "$" itself. The outpu
 ./technical/911report/chapter-12.txt:                the U.S. transportation sector. Over 90 percent of the nation's $5.3 billion annual
 ./technical/911report/chapter-10.txt:                    provide $20 billion for New York City, in addition to the $20 billion his budget
 ```
+
 As you can see this returns every lines within the directory with $ itself. This is helpful if you have certain numbers for a budget or statistic embedded within your files that you want to pull up quickly.
 
-__Different uses of the color option sign:__
+__Different ways to find strings and files:__
+
+Here's some ways to search for keywords and certain words throughout all these files.
+
+
+Example 1:
+
+I'm sure we already know how to search for a string, but how do we look for more than one string in the same file ? We can use the `|` below:
+
+```arshkaur@Arshs-Air docsearch % grep -r "winter" ./technical | grep "summer"```
+
+Output:
+
+```
+./technical/plos/journal.pbio.0030127.txt:        the following summer. There's evidence of a general decline in winter sea ice extent and
+./technical/biomed/1472-6785-2-7.txt:          wetter summers and drier winters than the Great Basin [
+./technical/biomed/1471-213X-3-7.txt:        over-wintering egg (figure 1). During spring and summer,
+```
+
+This is helpful for when you don't want to type each string one by one and compare the files after. This helps really narrow down your search.
+
+
+What if you just want the filenames to go explore the contents yourself ? Try this command below:
+
+```arshkaur@Arshs-Air docsearch % grep -r -l "winter" ./technical```
+
+Which gives us the output below: 
+
+```
+./technical/government/Env_Prot_Agen/multi102902.txt
+./technical/government/Env_Prot_Agen/final.txt
+./technical/government/Env_Prot_Agen/tech_adden.txt
+./technical/government/Post_Rate_Comm/Gleiman_gca2000.txt
+./technical/government/Post_Rate_Comm/Cohenetal_Cost_Function.txt
+./technical/government/Post_Rate_Comm/Cohenetal_comparison.txt
+./technical/plos/journal.pbio.0020419.txt
+./technical/plos/pmed.0020274.txt
+./technical/plos/journal.pbio.0030127.txt
+./technical/plos/pmed.0020024.txt
+./technical/plos/journal.pbio.0020406.txt
+./technical/biomed/1471-2229-2-3.txt
+./technical/biomed/1472-6785-1-5.txt
+./technical/biomed/1476-069X-1-3.txt
+./technical/biomed/1472-6785-2-7.txt
+./technical/biomed/1471-213X-3-7.txt
+./technical/biomed/1472-6793-2-11.txt
+./technical/biomed/1471-2229-2-8.txt
+./technical/biomed/1471-2458-1-9.txt
+./technical/911report/chapter-3.txt
+./technical/911report/chapter-12.txt
+```
+
+This allows for a bit more user readability as you're not bombarded with the lines printed out right after. Very helpful if you just want to grab the file name.
+
+
+Example 3:
+
+What if you want the line number to make going into that file and finding the line yourself easier ?
+
+```arshkaur@Arshs-Air docsearch % grep -r -n "winter" ./technical | grep -n  "summer" ```
+
+Which gives us the output below (notice the line number in front of the file location): 
+
+```
+19:./technical/plos/journal.pbio.0030127.txt:68:        the following summer. There's evidence of a general decline in winter sea ice extent and
+44:./technical/biomed/1472-6785-2-7.txt:452:          wetter summers and drier winters than the Great Basin [
+45:./technical/biomed/1471-213X-3-7.txt:41:        over-wintering egg (figure 1). During spring and summer,
+```
+
+This adds on the user readability from the previous example. When dealing with lots of files to search through or examine, this comes in handy. 
+
+
+__Different uses of the color option command:__
 
 Searching through files, lines, strings is very hard on user readability. The color option in grep can help with that.
 
@@ -135,6 +208,10 @@ arshkaur@Arshs-Air docsearch % grep -r --color=auto YES ./technical
 
 And here's the output below:
 ![Image](lab-images/week5_3.png)
+This small little trick can make a big difference in terms of searching and user readability. I sometimes have trouble finding exactly what I need quickly, especially when there's several words. This makes a big difference especially when dealing with lots of files and lines to read.
+
+
+
 
 
 
