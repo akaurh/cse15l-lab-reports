@@ -7,14 +7,14 @@ We will be exploring different ways to use the grep command and its alternates.
 
 __Different uses of the ```$``` sign:__
 
-If we use the ```$``` after a keyword, it shows any lines in the file or directory we're searching in that end in that word.
+If we use the ```$``` after a keyword, it shows all the lines in the file or directory we're searching in that end in that word.
 
 
 Example 1:
 
 ```arshkaur@Arshs-Air docsearch % grep -r today$ ./technical```
 
-This command will give us any lines in ./technicals that end in "today".
+This command will give us any lines in ./technical that end in "today".
 
 Here's the output below:
 ```
@@ -39,11 +39,11 @@ We can also look for empty files with `$`
 
 Example 2: 
 
-```grep -r ^$ ./technical```
+```arshkaur@Arshs-Air docsearch % grep -r ^$ ./technical```
 
 The output is too long to display but here's a snippet of some of the empty lines within files it returns: 
 
-```cs
+```
 ./technical/911report/chapter-1.txt:
 ./technical/911report/chapter-1.txt:
 ./technical/911report/chapter-1.txt:
@@ -67,6 +67,24 @@ And of course the question comes up, what if you want to actually search for the
 
 Example 3:
 
+```arshkaur@Arshs-Air docsearch % grep -r '\$' ./technical```
 
+This will output all the lines within the files containing "$" itself. The output again is too big, but here's snippet below
+
+```
+./technical/911report/chapter-7.txt:                hijackers are known to have purchased a total of nearly $50,000 in traveler's checks
+./technical/911report/chapter-7.txt:                $30,000 on June 25, 2001. After his June 27 arrival in the United States, Banihammad
+./technical/911report/chapter-7.txt:                UAE totaling $15,000 and, within days, relayed almost all of this money to Moussaoui
+./technical/911report/chapter-7.txt:                July 10, he put down a $1,500 deposit for flight simulator training at Pan Am
+./technical/911report/chapter-7.txt:                $6,800 balance owed for his flight simulator training at Pan Am in cash and began
+./technical/911report/chapter-7.txt:                Hawsawi in the UAE, about $26,000 altogether.
+./technical/911report/chapter-9.txt:                Authority spent an initial $100 million to make physical, structural, and
+./technical/911report/chapter-8.txt:                Moreover, Moussaoui had $32,000 in a bank account but did not provide a plausible
+./technical/911report/chapter-12.txt:                more than 50 percent, from $354 billion to about $547 billion. The United States has
+./technical/911report/chapter-12.txt:                capita income has dropped from $28,000 at its height to the present level of about
+./technical/911report/chapter-12.txt:                $8,000. Social and religious traditions complicate adjustment to modern economic
+./technical/911report/chapter-12.txt:                the U.S. transportation sector. Over 90 percent of the nation's $5.3 billion annual
+./technical/911report/chapter-10.txt:                    provide $20 billion for New York City, in addition to the $20 billion his budget
+```
 
 
