@@ -11,5 +11,8 @@ _[Lab Report Week 1](lab-report-week-1.html)_
 
 _[Lab Report Week 3](lab-report-week-3.html)_
 
+_[Lab Report Week 5](lab-report-week-5.html)_
+
+
 
 
