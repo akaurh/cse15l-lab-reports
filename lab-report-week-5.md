@@ -63,6 +63,7 @@ The output is too long to display but here's a snippet of some of the empty line
 
 This is helpful if you want to find all your blank lines within files. Whether to delete them or to use them, it can help cut down on useless empty lines within files. 
 
+
 And of course the question comes up, what if you want to actually search for the dollar sign itself within these files ?
 
 Example 3:
@@ -86,5 +87,8 @@ This will output all the lines within the files containing "$" itself. The outpu
 ./technical/911report/chapter-12.txt:                the U.S. transportation sector. Over 90 percent of the nation's $5.3 billion annual
 ./technical/911report/chapter-10.txt:                    provide $20 billion for New York City, in addition to the $20 billion his budget
 ```
+As you can see this returns every lines within the directory with $ itself. This is helpful if you have certain numbers for a budget or statistic embedded within your files that you want to pull up quickly.
+
+
 
 
