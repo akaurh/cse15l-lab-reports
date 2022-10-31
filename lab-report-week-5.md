@@ -1,17 +1,19 @@
-_Week 5: Researching Commands_
+<h1>_Week 5: Researching Commands_</h1>
 
 We've been doing a lot of work with the terminal and terminal commands. Below I will showing some different and perhaps new to you ways on how to use some of these commands and some alternate ways to use them. 
 
 <h3>The "Grep" command</h3>
-We will be exploring different ways to use the grep command and its alternates 
+We will be exploring different ways to use the grep command and its alternates.
 
-Different uses of the ```$``` sign:
+__Different uses of the ```$``` sign:__
 
 If we use the ```$``` after a keyword, it shows any lines in the file or directory we're searching in that end in that word.
 
-For example:
+
+Example 1:
 
 ```arshkaur@Arshs-Air docsearch % grep -r today$ ./technical```
+
 This command will give us any lines in ./technicals that end in "today".
 
 Here's the output below:
@@ -30,7 +32,41 @@ Here's the output below:
 ./technical/biomed/1472-6750-2-2.txt:        extended to many crops far beyond what is possible today
 
 ```
-This is useful for if you want to filter a bunch of files. Or 
+This is useful for if you want to filter a bunch of files. Or find important dates or files fast.
+
+
+We can also look for empty files with `$`
+
+Example 2: 
+
+```grep -r ^$ ./technical```
+
+The output is too long to display but here's a snippet of some of the empty lines within files it returns: 
+
+```cs
+./technical/911report/chapter-1.txt:
+./technical/911report/chapter-1.txt:
+./technical/911report/chapter-1.txt:
+./technical/911report/chapter-1.txt:
+./technical/911report/chapter-1.txt:
+./technical/911report/chapter-1.txt:
+./technical/911report/chapter-5.txt:
+./technical/911report/chapter-6.txt:
+./technical/911report/chapter-7.txt:
+./technical/911report/chapter-9.txt:
+./technical/911report/chapter-8.txt:
+./technical/911report/preface.txt:
+./technical/911report/chapter-12.txt:
+./technical/911report/chapter-10.txt:
+./technical/911report/chapter-11.txt:
+```
+
+This is helpful if you want to find all your blank lines within files. Whether to delete them or to use them, it can help cut down on useless empty lines within files. 
+
+And of course the question comes up, what if you want to actually search for the dollar sign itself within these files ?
+
+Example 3:
+
 
 
 
