@@ -32,6 +32,7 @@ Here's the output below:
 ./technical/biomed/1472-6750-2-2.txt:        extended to many crops far beyond what is possible today
 
 ```
+
 This is useful for if you want to filter a bunch of files. Or find important dates or files fast.
 
 
@@ -41,7 +42,7 @@ Example 2:
 
 ```arshkaur@Arshs-Air docsearch % grep -r ^$ ./technical```
 
-The output is too long to display but here's a snippet of some of the empty lines within files it returns: 
+The output is too long to display but here's a snippet of some of the empty lines within files it returns:
 
 ```
 ./technical/911report/chapter-1.txt:
@@ -65,6 +66,7 @@ This is helpful if you want to find all your blank lines within files. Whether t
 
 
 And of course the question comes up, what if you want to actually search for the dollar sign itself within these files ?
+
 
 Example 3:
 
@@ -90,10 +92,10 @@ This will output all the lines within the files containing "$" itself. The outpu
 
 As you can see this returns every lines within the directory with $ itself. This is helpful if you have certain numbers for a budget or statistic embedded within your files that you want to pull up quickly.
 
+
 __Different ways to find strings and files:__
 
 Here's some ways to search for keywords and certain words throughout all these files.
-
 
 Example 1:
 
@@ -180,6 +182,7 @@ This allows for the user to clearly see the keyword they're looking for in contr
 But the fun doesn't stop there, you can also highlight, and change colors while searching for keywords.
 
 Example 2:
+
 The first line is exporting the enviroment variable, you can see a full menu of options _[here](https://arkit.co.in/practical-grep-command-tricks/)_ 
 
 The first number in the quotations is the attribute, in this case, it's "bright", the second number is the foreground color, the third number is the background color.
