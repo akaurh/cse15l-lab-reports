@@ -89,6 +89,21 @@ This will output all the lines within the files containing "$" itself. The outpu
 ```
 As you can see this returns every lines within the directory with $ itself. This is helpful if you have certain numbers for a budget or statistic embedded within your files that you want to pull up quickly.
 
+__Different uses of the color option sign:__
+
+Searching through files, lines, strings is very hard on user readability. The color option in grep can help with that.
+
+
+Example 1:
+
+```arshkaur@Arshs-Air docsearch % grep -r --color=auto YES ./technical```
+
+The above command gives us this output (showing a screenshot instead of text block to illustrate the color):
+![Image](lab-images/week5_1.png)
+
+
+
+
 
 
 
