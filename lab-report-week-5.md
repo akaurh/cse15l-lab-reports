@@ -15,7 +15,7 @@ For example:
 This command will give us any lines in ./technicals that end in "today".
 
 Here's the output below:
-```cs
+```
 
 /technical/government/About_LSC/Progress_report.txt:increase in the number of people who enter the justice system today
 ./technical/government/Gen_Account_Office/d03419sp.txt:However, there is a lot of dialogue taking place today
@@ -30,6 +30,7 @@ Here's the output below:
 ./technical/biomed/1472-6750-2-2.txt:        extended to many crops far beyond what is possible today
 
 ```
+This is useful for if you want to filter a bunch of files. Or 
 
 
 
