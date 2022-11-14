@@ -13,6 +13,6 @@ _[Lab Report Week 3](lab-report-week-3.html)_
 
 _[Lab Report Week 5](lab-report-week-5.html)_
 
-
+_[Lab Report Week 7](lab-report-week-7.html)_
 
 
