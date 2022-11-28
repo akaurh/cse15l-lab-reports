@@ -1,4 +1,4 @@
-<h1>_Week 9 Lab Report Autograder</h1>
+<h1>Week 9 Lab Report Autograder</h1>
 
 Here's my `grade.sh` block
 
