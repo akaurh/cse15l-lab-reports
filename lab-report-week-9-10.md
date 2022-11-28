@@ -52,3 +52,9 @@ fi
 
 echo "Your score is" $SCORE "out of 3"
 ```
+
+I was not able to get the server set up, I'm not sure if it was because I wasn't on UCSD's network, but I will be resubmitting when I get onto campus. I keep getting the error below
+
+![Image](lab-images/week9_1.png)
+
+
