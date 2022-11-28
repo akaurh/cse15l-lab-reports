@@ -15,4 +15,7 @@ _[Lab Report Week 5](lab-report-week-5.html)_
 
 _[Lab Report Week 7](lab-report-week-7.html)_
 
+_[Lab Report Week 9](lab-report-week-9-10.html)_
+
+
 
