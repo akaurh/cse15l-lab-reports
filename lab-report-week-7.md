@@ -33,4 +33,9 @@ In total this was 22 keystokes so we hit our goal of being under 30 !
 
 <h3>_Part Two</h3>
 
-So I loaded this up in visual studios to make the same edits, and it may have been I am not as used to VS code, but it took me 61s to edit and make the necessary changes, meanwhile it takes me 27s to use vim to edit the same file. I think one of the clear differences here is the necessary use of a mouse in VS code. You could just use just your arrows and keypad for VS code, but I would asumme that would take longer because we don't have the same shortcuts we do in vim. Whereas in vim, it takes just 22 keystrokes. I will say tho it may be faster in vim because this has been rehearsed
+So I loaded this up in visual studios to make the same edits, and it may have been I am not as used to VS code, but it took me 61s to edit and make the necessary changes, meanwhile it takes me 27s to use vim to edit the same file. I think one of the clear differences here is the necessary use of a mouse in VS code. You could just use just your arrows and keypad for VS code, but I would asumme that would take longer because we don't have the same shortcuts we do in vim. Whereas in vim, it takes just 22 keystrokes. I will say though, it may be faster in vim because this has been rehearsed a couple of times.
+
+1. I think I would prefer vim, the commands don't seem to hard to pick up on, and it would nice to not have to pick up my fingers from the keyboard.
+
+2. I think I would use vim for simple or small edits that I have to make quickly to a file. I feel like moving into between files and etc. may be easier on visual studio code.
+
