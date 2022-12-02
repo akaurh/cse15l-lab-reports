@@ -1,4 +1,4 @@
-<h1>Week 7: Vim ???</h1>
+<h1>Week 7: Vim</h1>
 
 <h3>Part One</h3>
 
